@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XG Build — Leading builder approach</title>
+  <meta name="description" content="XG Build prioritises integrity, reliability and quality in every project, be it small remodels or large-scale constructions.">
+  <meta name="theme-color" content="#fdfcfc">
+  <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Geist:wght@300..600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-poster.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.43 5.93 20.5 12l-6.07 6.07M3.5 12h16.83"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9.57 5.93 3.5 12l6.07 6.07M20.5 12H3.67"/></symbol>
+    <symbol id="i-arrow-square-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"/><path d="M8.47 10.64 12 14.16l3.53-3.52" fill="currentColor"/></symbol>
+    <symbol id="i-play-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 8.97c0-.48 0-.72.1-.85a.5.5 0 0 1 .36-.2c.17-.01.37.12.77.38l4.72 3.03c.35.22.52.34.58.48a.5.5 0 0 1 0 .38c-.06.14-.23.26-.58.48l-4.72 3.03c-.4.26-.6.39-.77.38a.5.5 0 0 1-.36-.2c-.1-.13-.1-.37-.1-.85V8.970Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h12M3 6h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 21 21" fill="currentColor"><path d="M20.98 6.17c-.05-1.11-.23-1.88-.49-2.54a5.160 5.160 0 0 0-1.210-1.870A5.150 5.150 0 0 0 17.420.55c-.67-.25-1.430-.44-2.550-.48C13.750.01 13.390 0 10.540 0S7.330.01 6.210.06C5.090.11 4.330.29 3.660.55A5.110 5.110 0 0 0 1.800 1.760 5.170 5.170 0 0 0 .59 3.620C.33 4.290.15 5.050.10 6.170.05 7.290.04 7.650.04 10.500s.01 3.210.06 4.330c.05 1.120.23 1.880.48 2.550.27.700.69 1.330 1.220 1.860a5.150 5.150 0 0 0 1.860 1.210c.67.260 1.430.440 2.550.490 1.120.050 1.470.060 4.320.060s3.210-.01 4.330-.06c1.120-.05 1.880-.23 2.550-.49a5.370 5.370 0 0 0 3.070-3.070c.26-.67.44-1.430.49-2.550.05-1.120.06-1.480.06-4.330s0-3.210-.05-4.330Zm-1.890 8.580c-.05 1.020-.22 1.580-.36 1.950a3.490 3.490 0 0 1-2 1.990c-.37.140-.93.320-1.950.360-1.100.050-1.440.060-4.240.060s-3.140-.01-4.240-.06c-1.030-.04-1.580-.22-1.950-.36a3.240 3.240 0 0 1-1.210-.78 3.270 3.270 0 0 1-.78-1.210c-.14-.37-.31-.93-.36-1.950-.05-1.110-.06-1.440-.06-4.240s.01-3.140.06-4.240c.05-1.030.22-1.580.36-1.950.17-.46.44-.87.79-1.210.34-.35.75-.61 1.200-.78.37-.14.93-.32 1.950-.36 1.110-.05 1.440-.06 4.250-.06 2.800 0 3.130.01 4.240.06 1.020.04 1.580.22 1.950.36.45.17.870.430 1.200.780.350.340.620.750.790 1.210.140.370.310.930.360 1.950.050 1.110.060 1.440.060 4.240s-.01 3.130-.06 4.240Z"/><path d="M10.54 5.110a5.390 5.390 0 1 0 0 10.790 5.390 5.390 0 0 0 0-10.790Zm0 8.890a3.500 3.500 0 1 1 0-7 3.500 3.500 0 0 1 0 7Z"/><circle cx="16.15" cy="4.89" r="1.26"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 21 21" fill="currentColor"><path d="M14 3.490h1.910V.15C15.580.10 14.450 0 13.120 0 10.360 0 8.460 1.740 8.460 4.930v2.950H5.410v3.730h3.050V21h3.740v-9.390h2.930l.47-3.730h-3.400V5.300c0-1.070.29-1.810 1.800-1.810Z"/></symbol>
+  </svg>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <a class="header__logo" href="#top" aria-label="XG Build — home">
+      <img src="assets/img/logo-light.svg" alt="XG Build" width="157" height="40">
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#what-we-do">What we do</a></li>
+        <li><a href="#projects">Our projects</a></li>
+        <li><a href="#about">About us</a></li>
+      </ul>
+      <span class="nav__divider" aria-hidden="true"></span>
+      <a class="nav__btn nav__btn--ghost" href="#contact">Contact us <svg><use href="#i-arrow-up-right"/></svg></a>
+      <a class="nav__btn nav__btn--solid" href="tel:+61424204690">Book a call <svg><use href="#i-arrow-up-right"/></svg></a>
+    </nav>
+
+    <button class="header__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg><use href="#i-menu"/></svg>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="mobile-menu" hidden>
+    <div class="menu__panel">
+      <div class="menu__bar">
+        <a class="header__logo" href="#top" aria-label="XG Build — home">
+          <img src="assets/img/logo-light.svg" alt="XG Build" width="125" height="32">
+        </a>
+        <button class="menu__close" type="button" aria-label="Close menu"><svg><use href="#i-close"/></svg></button>
+      </div>
+      <nav class="menu__nav" aria-label="Main menu">
+        <p class="eyebrow">Main menu</p>
+        <ul>
+          <li><a href="#what-we-do">What we do</a></li>
+          <li><a href="#projects">Our projects</a></li>
+          <li><a href="#about">About us</a></li>
+        </ul>
+      </nav>
+      <div class="menu__actions">
+        <a class="btn btn--primary" href="tel:+61424204690">Book a call <svg><use href="#i-arrow-right"/></svg></a>
+        <a class="btn btn--secondary" href="#contact">Contact us <svg><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__media">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <p class="hero__tagline">We build your dream home</p>
+
+      <div class="hero__content">
+        <h1 class="hero__title">Leading <br class="d-only">builder approach.</h1>
+        <p class="hero__text">We prioritize integrity, reliability, and quality in every project, be it small remodels or large-scale constructions.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="tel:+61424204690">Book a call <svg><use href="#i-arrow-right"/></svg></a>
+          <a class="btn btn--secondary" href="#projects">Explore projects <svg><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about">Scroll to discover <svg><use href="#i-arrow-square-down"/></svg></a>
+    </section>
+
+    <!-- About -->
+    <section class="about container" id="about">
+      <div class="about__head">
+        <p class="eyebrow">About us</p>
+        <h2 class="about__title">When thinking of sub-dividing your land and building a new home think of <strong>XG Build.</strong></h2>
+      </div>
+
+      <div class="about__body">
+        <div class="about__photo">
+          <img src="assets/img/about.jpg" alt="Timber kitchen opening onto a pool courtyard" loading="lazy" width="2200" height="1468">
+        </div>
+
+        <div class="about__reel">
+          <button class="reel__label" type="button" data-reel-open>Play reel <svg><use href="#i-play-circle"/></svg></button>
+          <button class="reel__thumb" type="button" data-reel-open aria-label="Play the XG Build reel">
+            <img src="assets/img/reel-poster.jpg" alt="" loading="lazy" width="900" height="1600">
+          </button>
+        </div>
+
+        <div class="about__copy">
+          <p>At XG Build, we are committed to integrity, reliability, <br class="d-only">and quality. From small remodels to large-scale projects, we oversee every detail, guiding you from concept to completion. Your vision, our excellence.</p>
+          <a class="link" href="#projects">Explore our portfolio <svg><use href="#i-arrow-up-right"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="services" id="what-we-do">
+      <div class="services__head container">
+        <div>
+          <p class="eyebrow">What we do</p>
+          <h2 class="h2">Are you seeking support for build or renovate your living style?</h2>
+        </div>
+        <p class="services__lead">Find the right care for you or a loved one. Taking the first step toward healing can feel daunting, but you are not alone. Let us walk with you.</p>
+      </div>
+
+      <div class="services__grid">
+        <a class="card" href="#contact">
+          <img class="card__img" src="assets/img/service-consulting.jpg" alt="" loading="lazy">
+          <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
+          <div class="card__body">
+            <h3>Consulting</h3>
+            <p>Building experts will get in touch to understand your goals, financial position and plans.</p>
+          </div>
+        </a>
+        <a class="card" href="#contact">
+          <img class="card__img" src="assets/img/service-planning.jpg" alt="" loading="lazy">
+          <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
+          <div class="card__body">
+            <h3>Planning</h3>
+            <p>Building and planning experts assist in the planning and design of your final project.</p>
+          </div>
+        </a>
+        <a class="card" href="#contact">
+          <img class="card__img" src="assets/img/service-operations.jpg" alt="" loading="lazy">
+          <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
+          <div class="card__body">
+            <h3>Operations</h3>
+            <p>To ensure everything runs smoothly we manage the permits, contractors and construction of your project</p>
+          </div>
+        </a>
+        <a class="card" href="#contact">
+          <img class="card__img" src="assets/img/service-completion.jpg" alt="" loading="lazy">
+          <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
+          <div class="card__body">
+            <h3>Completion</h3>
+            <p>We complete the handover of your new home or investment priding ourselves on meeting deadlines.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Our projects -->
+    <section class="projects" id="projects">
+      <div class="projects__head container">
+        <div>
+          <p class="eyebrow">Our projects</p>
+          <h2 class="h2">Impressive track record of successfully delivering</h2>
+        </div>
+        <div class="projects__intro">
+          <p>We have an impressive track record of successfully delivering diverse construction projects marked by excellence and client satisfaction.</p>
+          <a class="link link--light" href="#upcoming">Explore all projects <svg><use href="#i-arrow-up-right"/></svg></a>
+        </div>
+      </div>
+
+      <div class="rule rule--dark container">
+        <div class="rule__nav">
+          <button type="button" aria-label="Previous project" data-carousel-prev="projects-track"><svg><use href="#i-arrow-left"/></svg></button>
+          <button type="button" aria-label="Next project" data-carousel-next="projects-track"><svg><use href="#i-arrow-right"/></svg></button>
+        </div>
+      </div>
+
+      <div class="track track--projects" id="projects-track" data-carousel tabindex="0" aria-label="Completed projects">
+        <figure class="slide slide--wide">
+          <img src="assets/img/project-hobart.jpg" alt="Kitchen with timber-batten island at 4A Hobart Avenue" loading="lazy" draggable="false">
+          <figcaption>4A Hobart Avenue</figcaption>
+        </figure>
+        <figure class="slide slide--narrow">
+          <img src="assets/img/project-omar.jpg" alt="Living room at Omar Avenue" loading="lazy" draggable="false" style="object-position: 26% 50%">
+          <figcaption>Omar Avenue</figcaption>
+        </figure>
+        <figure class="slide slide--wide">
+          <img src="assets/img/project-huntington.jpg" alt="Two-storey home at 13 Huntington Avenue at dusk" loading="lazy" draggable="false">
+          <figcaption>13 Huntington Avenue</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Upcoming projects -->
+    <section class="upcoming" id="upcoming">
+      <div class="rule container">
+        <div class="rule__nav">
+          <button type="button" aria-label="Previous upcoming project" data-carousel-prev="upcoming-track"><svg><use href="#i-arrow-left"/></svg></button>
+          <button type="button" aria-label="Next upcoming project" data-carousel-next="upcoming-track"><svg><use href="#i-arrow-right"/></svg></button>
+        </div>
+      </div>
+      <p class="eyebrow container">Upcoming projects 2027</p>
+
+      <div class="track track--upcoming" id="upcoming-track" data-carousel data-drag-cursor tabindex="0" aria-label="Upcoming projects">
+        <figure class="tile">
+          <div class="tile__img"><img src="assets/img/upcoming-1.jpg" alt="Render of a single-storey home with stone feature wall" loading="lazy" draggable="false"></div>
+          <figcaption><span>Building 3 bed apartment in Main sydney</span><strong>Completing in 2027</strong></figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="tile__img"><img src="assets/img/upcoming-2.jpg" alt="Render of a stone and timber entry" loading="lazy" draggable="false"></div>
+          <figcaption><span>Luxury 2 bed condo in downtown Melbourne</span><strong>Completing in 2027</strong></figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="tile__img"><img src="assets/img/upcoming-3.jpg" alt="Street view render of 17 and 17A Rossall" loading="lazy" draggable="false"></div>
+          <figcaption><span>Cozy studio near Brisbane riverfront</span><strong>Move-in ready by mid 2027</strong></figcaption>
+        </figure>
+        <figure class="tile">
+          <div class="tile__img"><img src="assets/img/upcoming-4.jpg" alt="Poolside pergola and alfresco dining" loading="lazy" draggable="false" style="object-position: 85% 50%"></div>
+          <figcaption><span>Spacious 4 bed house in Perth suburbs</span><strong>Expected completion in 2027</strong></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <img class="contact__bg" src="assets/img/contact.jpg" alt="Open-plan living room and kitchen" loading="lazy" width="2400" height="1600">
+      <form class="contact__form" id="contact-form" action="mailto:enquiries@xgbuild.com.au" method="post" enctype="text/plain">
+        <h2 class="eyebrow">Contact us</h2>
+        <div class="contact__fields">
+          <label><span class="sr-only">Full name</span><input type="text" name="name" placeholder="Enter full name" autocomplete="name" required></label>
+          <label><span class="sr-only">Phone number</span><input type="tel" name="phone" placeholder="Enter phone number" autocomplete="tel"></label>
+          <label><span class="sr-only">Email address</span><input type="email" name="email" placeholder="Enter email address" autocomplete="email" required></label>
+          <label><span class="sr-only">Message</span><textarea name="message" placeholder="Type your message" rows="4" required></textarea></label>
+        </div>
+        <button class="btn btn--primary" type="submit">Submit <svg><use href="#i-arrow-right"/></svg></button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <h2>Considering <br class="d-only">the next chapter of your living?</h2>
+        <a class="link" href="#projects">Explore our portfolio <svg><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+
+      <nav class="footer__col footer__links" aria-label="Quick links">
+        <h3 class="eyebrow eyebrow--sm">Quick links</h3>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#what-we-do">What we do</a></li>
+          <li><a href="#projects">Our projects</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col footer__touch">
+        <h3 class="eyebrow eyebrow--sm">Get in touch</h3>
+        <ul>
+          <li><a href="tel:+61424204690">+61 424 204 690</a></li>
+          <li>PO BOX 104, Brighton Road, Brighton Adelaide, SA, Australia</li>
+          <li><a href="mailto:enquiries@xgbuild.com.au">enquiries@xgbuild.com.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a>
+      </div>
+    </div>
+
+    <p class="footer__legal">© 2026 XG build <span>|</span> <a href="#">Privacy policy</a> <span>|</span> <a href="#">Terms of use</a></p>
+    <img class="footer__wordmark" src="assets/img/wordmark.svg" alt="XG Build" width="1795" height="357">
+  </footer>
+
+  <!-- Reel lightbox -->
+  <dialog class="reel-dialog" id="reel-dialog" aria-label="XG Build reel">
+    <button class="reel-dialog__close" type="button" aria-label="Close reel"><svg><use href="#i-close"/></svg></button>
+    <video controls playsinline preload="none" poster="assets/img/reel-poster.jpg">
+      <source src="assets/video/reel.mp4" type="video/mp4">
+    </video>
+  </dialog>
+
+  <div class="drag-cursor" aria-hidden="true">Drag</div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
