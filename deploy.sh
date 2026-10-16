@@ -10,7 +10,7 @@ if [ -n "$(git status --porcelain)" ]; then
   exit 1
 fi
 
-git ls-files | grep -v -e '^\.' -e '^deploy\.sh$' \
+git ls-files | grep -v -e '^\.git' -e '^deploy\.sh$' \
   | rsync -avz --files-from=- ./ xgbuild:public_html/
 
-echo "Deployed $(git rev-parse --short HEAD) to http://hjg.102.mytemp.website/"
+echo "Deployed $(git rev-parse --short HEAD) to https://xgbuild.com.au/"
