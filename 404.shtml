@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — XG Build</title>
+  <meta name="theme-color" content="#fdfcfc">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/mark.svg">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Geist:wght@300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <header class="legal-bar">
+    <a href="/index.html" aria-label="XG Build — home"><img src="/assets/img/logo-dark.svg" alt="XG Build" width="157" height="40"></a>
+    <a class="link" href="/index.html#contact">Contact us</a>
+  </header>
+
+  <main class="legal">
+    <p class="eyebrow">Error 404</p>
+    <h1>Page not found</h1>
+    <p>The page you’re looking for has moved or no longer exists.</p>
+    <p><a class="link" href="/">Back to the homepage</a></p>
+  </main>
+
+  <footer class="legal-foot">
+    <p>© XG build <span>|</span> <a href="/privacy.html">Privacy policy</a> <span>|</span> <a href="/terms.html">Terms of use</a></p>
+  </footer>
+
+</body>
+</html>
