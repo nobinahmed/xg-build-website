@@ -64,7 +64,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Geist:wght@300..600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/img/hero-poster.jpg">
+  <link rel="preload" as="image" href="assets/img/hero-poster.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -132,7 +132,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__media">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.webp">
           <source src="assets/video/hero.mp4" type="video/mp4">
         </video>
       </div>
@@ -160,13 +160,13 @@
 
       <div class="about__body">
         <div class="about__photo">
-          <img src="assets/img/about.jpg" alt="Timber kitchen opening onto a pool courtyard" loading="lazy" width="2200" height="1468">
+          <img src="assets/img/about.webp" srcset="assets/img/about-800.webp 800w, assets/img/about.webp 1600w" sizes="(max-width: 899px) 100vw, 55vw" alt="Timber kitchen opening onto a pool courtyard" loading="lazy" decoding="async" width="1600" height="1068">
         </div>
 
         <div class="about__reel">
           <button class="reel__label" type="button" data-reel-open>Play reel <svg><use href="#i-play-circle"/></svg></button>
           <button class="reel__thumb" type="button" data-reel-open aria-label="Play the XG Build reel">
-            <img src="assets/img/reel-poster.jpg" alt="" loading="lazy" width="900" height="1600">
+            <img src="assets/img/reel-poster.webp" srcset="assets/img/reel-poster-800.webp 800w, assets/img/reel-poster.webp 900w" sizes="(max-width: 899px) 100vw, 19vw" alt="" loading="lazy" decoding="async" width="900" height="1600">
             <span class="reel__play" aria-hidden="true">Play reel <svg><use href="#i-play-circle"/></svg></span>
           </button>
         </div>
@@ -186,7 +186,7 @@
 
       <div class="services__grid">
         <a class="card" href="#projects">
-          <img class="card__img" src="assets/img/service-consulting.jpg" alt="" loading="lazy">
+          <img class="card__img" src="assets/img/service-consulting.webp" srcset="assets/img/service-consulting-800.webp 800w, assets/img/service-consulting.webp 1400w" sizes="(max-width: 899px) 70vw, 25vw" alt="" loading="lazy" decoding="async" width="1400" height="939">
           <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
           <div class="card__body">
             <h3>Consulting</h3>
@@ -194,7 +194,7 @@
           </div>
         </a>
         <a class="card" href="#projects">
-          <img class="card__img" src="assets/img/service-planning.jpg" alt="" loading="lazy">
+          <img class="card__img" src="assets/img/service-planning.webp" srcset="assets/img/service-planning-800.webp 800w, assets/img/service-planning.webp 1400w" sizes="(max-width: 899px) 70vw, 25vw" alt="" loading="lazy" decoding="async" width="1400" height="1167">
           <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
           <div class="card__body">
             <h3>Planning</h3>
@@ -202,7 +202,7 @@
           </div>
         </a>
         <a class="card" href="#projects">
-          <img class="card__img" src="assets/img/service-operations.jpg" alt="" loading="lazy">
+          <img class="card__img" src="assets/img/service-operations.webp" srcset="assets/img/service-operations-800.webp 800w, assets/img/service-operations.webp 1400w" sizes="(max-width: 899px) 70vw, 25vw" alt="" loading="lazy" decoding="async" width="1400" height="934">
           <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
           <div class="card__body">
             <h3>Operations</h3>
@@ -210,7 +210,7 @@
           </div>
         </a>
         <a class="card" href="#projects">
-          <img class="card__img" src="assets/img/service-completion.jpg" alt="" loading="lazy">
+          <img class="card__img" src="assets/img/service-completion.webp" srcset="assets/img/service-completion-800.webp 800w, assets/img/service-completion.webp 1400w" sizes="(max-width: 899px) 70vw, 25vw" alt="" loading="lazy" decoding="async" width="1400" height="934">
           <div class="card__top"><span class="card__more">Explore more</span><svg><use href="#i-arrow-up-right"/></svg></div>
           <div class="card__body">
             <h3>Completion</h3>
@@ -235,13 +235,13 @@
 
       <div class="track track--projects" id="projects-track" data-carousel tabindex="0" aria-label="Completed projects">
         <figure class="slide slide--wide">
-          <img src="assets/img/project-hobart.jpg" alt="Kitchen with timber-batten island" loading="lazy" draggable="false">
+          <img src="assets/img/project-hobart.webp" srcset="assets/img/project-hobart-800.webp 800w, assets/img/project-hobart.webp 1600w" sizes="(max-width: 899px) 90vw, 45vw" alt="Kitchen with timber-batten island" loading="lazy" decoding="async" width="1600" height="1067" draggable="false">
         </figure>
         <figure class="slide slide--narrow">
-          <img src="assets/img/project-omar.jpg" alt="Open living room" loading="lazy" draggable="false" style="object-position: 26% 50%">
+          <img src="assets/img/project-omar.webp" srcset="assets/img/project-omar-800.webp 800w, assets/img/project-omar.webp 1200w" sizes="(max-width: 899px) 70vw, 25vw" alt="Open living room" loading="lazy" decoding="async" width="1200" height="800" draggable="false" style="object-position: 26% 50%">
         </figure>
         <figure class="slide slide--wide">
-          <img src="assets/img/project-huntington.jpg" alt="Two-storey home at dusk" loading="lazy" draggable="false">
+          <img src="assets/img/project-huntington.webp" srcset="assets/img/project-huntington-800.webp 800w, assets/img/project-huntington.webp 1600w" sizes="(max-width: 899px) 90vw, 45vw" alt="Two-storey home at dusk" loading="lazy" decoding="async" width="1600" height="1066" draggable="false">
         </figure>
       </div>
     </section>
@@ -258,17 +258,17 @@
 
       <div class="track track--upcoming" id="upcoming-track" data-carousel data-drag-cursor tabindex="0" aria-label="Upcoming projects">
         <figure class="tile">
-          <div class="tile__img"><img src="assets/img/upcoming-1.jpg" alt="Render of a single-storey home with stone feature wall" loading="lazy" draggable="false"></div>
+          <div class="tile__img"><img src="assets/img/upcoming-1.webp" srcset="assets/img/upcoming-1-800.webp 800w, assets/img/upcoming-1.webp 1121w" sizes="(max-width: 899px) 80vw, 29vw" alt="Render of a single-storey home with stone feature wall" loading="lazy" decoding="async" width="1121" height="1403" draggable="false"></div>
         </figure>
         <figure class="tile">
-          <div class="tile__img"><img src="assets/img/upcoming-2.jpg" alt="Render of a stone and timber entry" loading="lazy" draggable="false"></div>
+          <div class="tile__img"><img src="assets/img/upcoming-2.webp" srcset="assets/img/upcoming-2-800.webp 800w, assets/img/upcoming-2.webp 1200w" sizes="(max-width: 899px) 80vw, 29vw" alt="Render of a stone and timber entry" loading="lazy" decoding="async" width="1200" height="1500" draggable="false"></div>
         </figure>
       </div>
     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
-      <img class="contact__bg" src="assets/img/contact.jpg" alt="Open-plan living room and kitchen" loading="lazy" width="2400" height="1600">
+      <img class="contact__bg" src="assets/img/contact.webp" srcset="assets/img/contact-800.webp 800w, assets/img/contact.webp 1920w" sizes="100vw" alt="Open-plan living room and kitchen" loading="lazy" decoding="async" width="1920" height="1280">
       <form class="contact__form" id="contact-form" action="contact.php" method="post">
         <h2 class="eyebrow">Contact us</h2>
         <div class="contact__fields">
@@ -323,7 +323,7 @@
   <!-- Reel lightbox -->
   <dialog class="reel-dialog" id="reel-dialog" aria-label="XG Build reel">
     <button class="reel-dialog__close" type="button" aria-label="Close reel"><svg><use href="#i-close"/></svg></button>
-    <video controls playsinline preload="none" poster="assets/img/reel-poster.jpg">
+    <video controls playsinline preload="none" poster="assets/img/reel-poster.webp">
       <source src="assets/video/reel.mp4" type="video/mp4">
     </video>
   </dialog>

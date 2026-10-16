@@ -5,3 +5,20 @@ RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://xgbuild.com.au%{REQUEST_URI} [L,R=301]
 
 ErrorDocument 404 /404.shtml
+
+# Compress text files (HTML/CSS are already gzipped by the host; this covers the rest).
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# Browser caching. Images and videos rarely change (give a replacement a new
+# file name), so cache them for 30 days. HTML, CSS and JS are revalidated on
+# every visit so deploys show up immediately; unchanged files return a cheap 304.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|jpg|jpeg|png|svg|ico|mp4|woff2?)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.(html|shtml|css|js|xml|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
