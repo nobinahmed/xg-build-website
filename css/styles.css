@@ -586,17 +586,13 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    height: 2.5rem;
-    padding: 0 1rem;
-    background: rgba(30, 30, 36, 0.85);
-    color: var(--paper);
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+    height: 1.75rem;
+    font-size: 1.125rem;
+    letter-spacing: -0.03em;
+    color: var(--grey);
     white-space: nowrap;
   }
-  .reel__play svg { color: var(--gold); stroke-width: 1.5; }
+  .reel__play svg { width: 1.75rem; height: 1.75rem; color: var(--gold); stroke-width: 1.5; }
   .about__copy { position: static; width: auto; margin-top: 1.5rem; }
   .about__copy p { margin-bottom: 1.5rem; }
 
