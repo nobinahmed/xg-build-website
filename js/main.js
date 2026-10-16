@@ -115,21 +115,39 @@
   dialog.addEventListener('close', () => reel.pause());
 
   /* ---------- Contact form ----------
-     No backend is wired up yet: the form opens the visitor's mail client with
-     the enquiry pre-filled. Swap this handler for a fetch() to your form
-     endpoint when one exists. */
+     Posts to contact.php, which emails the enquiry to enquiries@xgbuild.com.au. */
   const form = document.getElementById('contact-form');
-  form.addEventListener('submit', (e) => {
+  const status = form.querySelector('.contact__status');
+  const submit = form.querySelector('[type="submit"]');
+
+  const showStatus = (text, ok) => {
+    status.textContent = text;
+    status.classList.toggle('is-error', !ok);
+  };
+
+  const sent = new URLSearchParams(location.search).get('sent');
+  if (sent !== null) {
+    showStatus(sent === '1' ? 'Thanks — we’ll be in touch soon.' : 'Sorry, your message couldn’t be sent. Please call us on +61 424 204 690.', sent === '1');
+  }
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const data = new FormData(form);
-    const body = [
-      `Name: ${data.get('name')}`,
-      `Phone: ${data.get('phone')}`,
-      `Email: ${data.get('email')}`,
-      '',
-      data.get('message'),
-    ].join('\n');
-    window.location.href = `mailto:enquiries@xgbuild.com.au?subject=${encodeURIComponent('Website enquiry from ' + data.get('name'))}&body=${encodeURIComponent(body)}`;
+    submit.disabled = true;
+    showStatus('Sending…', true);
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'X-Requested-With': 'fetch' },
+      });
+      const data = await res.json();
+      showStatus(data.message, data.ok);
+      if (data.ok) form.reset();
+    } catch {
+      showStatus('Sorry, your message couldn’t be sent. Please call us on +61 424 204 690.', false);
+    } finally {
+      submit.disabled = false;
+    }
   });
 
   /* ---------- Scroll reveal ---------- */

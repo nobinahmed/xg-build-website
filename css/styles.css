@@ -477,6 +477,11 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 .contact__fields textarea:focus { border-color: var(--gold); background: rgba(253, 252, 252, 0.14); }
 
 .contact__form .btn { cursor: pointer; }
+.contact__form .btn:disabled { opacity: 0.6; cursor: wait; }
+.contact__trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.contact__status { margin-top: 1.25rem; font-size: 1rem; color: var(--paper); }
+.contact__status:empty { display: none; }
+.contact__status.is-error { color: #ffb4a6; }
 
 /* ---------- Footer ---------- */
 
@@ -623,6 +628,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
   .contact__fields input, .contact__fields textarea { height: 2.5rem; padding-inline: 1.0625rem; background: #191919; font-size: 0.875rem; }
   .contact__fields textarea { height: 8.75rem; padding-block: 0.75rem; }
   .contact__form .btn { width: 100%; }
+  .contact__status { margin-top: 0.75rem; font-size: 0.875rem; }
 
   /* Footer */
   .footer { padding: 4rem 0.75rem 1rem; }

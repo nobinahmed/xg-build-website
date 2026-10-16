@@ -214,15 +214,17 @@
     <!-- Contact -->
     <section class="contact" id="contact">
       <img class="contact__bg" src="assets/img/contact.jpg" alt="Open-plan living room and kitchen" loading="lazy" width="2400" height="1600">
-      <form class="contact__form" id="contact-form" action="mailto:enquiries@xgbuild.com.au" method="post" enctype="text/plain">
+      <form class="contact__form" id="contact-form" action="contact.php" method="post">
         <h2 class="eyebrow">Contact us</h2>
         <div class="contact__fields">
           <label><span class="sr-only">Full name</span><input type="text" name="name" placeholder="Enter full name" autocomplete="name" required></label>
           <label><span class="sr-only">Phone number</span><input type="tel" name="phone" placeholder="Enter phone number" autocomplete="tel"></label>
           <label><span class="sr-only">Email address</span><input type="email" name="email" placeholder="Enter email address" autocomplete="email" required></label>
           <label><span class="sr-only">Message</span><textarea name="message" placeholder="Type your message" rows="4" required></textarea></label>
+          <label class="contact__trap" aria-hidden="true">Leave blank<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
         </div>
         <button class="btn btn--primary" type="submit">Submit <svg><use href="#i-arrow-right"/></svg></button>
+        <p class="contact__status" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
