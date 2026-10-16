@@ -86,20 +86,6 @@
     track.addEventListener('pointercancel', release);
   });
 
-  /* ---------- "Drag" cursor over the upcoming projects ---------- */
-  const cursor = document.querySelector('.drag-cursor');
-  if (cursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    document.querySelectorAll('[data-drag-cursor]').forEach((track) => {
-      const move = (e) => { cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`; };
-      track.addEventListener('pointerenter', (e) => { move(e); cursor.classList.add('is-visible'); });
-      track.addEventListener('pointermove', move);
-      track.addEventListener('pointerleave', () => cursor.classList.remove('is-visible', 'is-pressed'));
-      track.addEventListener('pointerdown', () => cursor.classList.add('is-pressed'));
-      track.addEventListener('pointerup', () => cursor.classList.remove('is-pressed'));
-    });
-    window.addEventListener('scroll', () => cursor.classList.remove('is-visible'), { passive: true });
-  }
-
   /* ---------- Reel lightbox ---------- */
   const dialog = document.getElementById('reel-dialog');
   const reel = dialog.querySelector('video');
