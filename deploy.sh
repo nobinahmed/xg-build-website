@@ -11,6 +11,6 @@ if [ -n "$(git status --porcelain)" ]; then
 fi
 
 git ls-files | grep -v -e '^\.' -e '^deploy\.sh$' \
-  | rsync -avz --files-from=- --chmod=D755,F644 ./ xgbuild:public_html/
+  | rsync -avz --files-from=- ./ xgbuild:public_html/
 
 echo "Deployed $(git rev-parse --short HEAD) to http://hjg.102.mytemp.website/"
