@@ -134,7 +134,7 @@
 
   /* ---------- Scroll reveal ---------- */
   const targets = document.querySelectorAll(
-    '.about__head, .about__photo, .about__reel, .about__copy, .services__head, .card, .projects__head, .slide, .tile, .contact__form'
+    '.about__head, .about__photo, .about__reel, .about__copy, .card, .slide, .tile, .contact__form'
   );
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {

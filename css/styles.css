@@ -273,7 +273,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 .about__photo { width: 65.875rem; aspect-ratio: 1054 / 980; overflow: hidden; background: #ded6cb; }
 .about__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 97% 50%; }
 
-.about__reel { position: absolute; top: 7rem; left: 28.8125rem; width: 22.5625rem; }
+.about__reel { position: absolute; top: 7rem; left: 0; width: 22.5625rem; }
 .reel__label { display: inline-flex; align-items: center; gap: 0.5rem; height: 1.75rem; font-size: 1.125rem; letter-spacing: -0.03em; color: var(--grey); }
 .reel__label svg { width: 1.75rem; height: 1.75rem; color: var(--gold); stroke-width: 1.5; }
 .reel__thumb { display: block; width: 100%; margin-top: 1.3125rem; aspect-ratio: 361 / 466; overflow: hidden; background: #000; }
@@ -287,14 +287,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 
 .services { margin-top: 10rem; }
 
-.services__head {
-  display: grid;
-  grid-template-columns: 57.75rem 37.125rem;
-  align-items: end;
-  padding-bottom: 3.5rem;
-}
-.services__head .h2 { margin-top: 2rem; max-width: 45.5rem; }
-.services__lead { padding-bottom: 0.125rem; }
+.services__head { padding-bottom: 3.5rem; }
 
 .services__grid {
   display: grid;
@@ -393,10 +386,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 
 .projects { margin-top: 10rem; padding: 10rem 0; background: var(--charcoal); color: var(--paper); }
 
-.projects__head { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 4rem; }
-.projects__head .h2 { margin-top: 3.3125rem; max-width: 49.75rem; }
-.projects__intro { width: 36.375rem; margin-right: 1.25rem; }
-.projects__intro p { margin-bottom: 2.5rem; font-size: 1.5rem; font-weight: 300; letter-spacing: 0; }
+.projects__head { padding-bottom: 4rem; }
 
 .track--projects { gap: 1rem; margin-top: 4rem; padding-inline: calc(var(--gutter) + 0.0625rem); }
 
@@ -405,8 +395,6 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 .slide--narrow { width: 29.9375rem; }
 .slide img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
 .slide:hover img { transform: scale(1.03); }
-.slide::after { content: ""; position: absolute; inset: auto 0 0; height: 11.375rem; background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)); }
-.slide figcaption { position: absolute; left: 2.3125rem; bottom: 1.625rem; z-index: 1; font-size: 1rem; line-height: 1.4; letter-spacing: 0; }
 
 /* ---------- Upcoming projects ---------- */
 
@@ -419,8 +407,6 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 .tile__img { aspect-ratio: 556 / 680; overflow: hidden; background: #373535; }
 .tile__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
 .tile:hover .tile__img img { transform: scale(1.03); }
-.tile figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-top: 1.25rem; font-size: 1rem; letter-spacing: 0; }
-.tile figcaption strong { font-weight: 500; text-align: right; white-space: nowrap; }
 
 .drag-cursor {
   position: fixed;
@@ -499,7 +485,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 .footer__top { position: relative; display: flex; align-items: flex-start; padding-left: 0.25rem; }
 
 .footer__cta { width: 30rem; margin-right: auto; }
-.footer__cta h2 { margin-bottom: 4rem; font-family: var(--font-display); font-size: 3.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.04em; }
+.footer__cta h2 { font-family: var(--font-display); font-size: 3.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.04em; }
 
 .footer__col ul { margin-top: 2.25rem; display: grid; }
 .footer__col a { transition: color 0.2s; }
@@ -508,6 +494,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 .footer__links ul { gap: 0.625rem; }
 .footer__touch { width: 20.625rem; margin-right: 0.25rem; padding-bottom: 6.5rem; }
 .footer__touch ul { gap: 1.625rem; }
+.footer__note { display: block; margin-bottom: 0.375rem; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; color: var(--grey); }
 
 .footer__social { position: absolute; right: 13.875rem; bottom: 0; display: flex; gap: 1rem; }
 .footer__social a { display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%; background: rgba(93, 100, 104, 0.1); transition: background-color 0.25s var(--ease); }
@@ -590,9 +577,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 
   /* What we do */
   .services { margin-top: 4rem; }
-  .services__head { display: block; padding-bottom: 2rem; }
-  .services__head .h2 { margin-top: 1.5rem; }
-  .services__lead { margin-top: 1.5rem; padding: 0; }
+  .services__head { padding-bottom: 2rem; }
   .services__grid {
     display: flex;
     gap: 0.5rem;
@@ -613,16 +598,12 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 
   /* Our projects */
   .projects { margin-top: 4rem; padding: 4rem 0; }
-  .projects__head { display: block; padding-bottom: 0; }
-  .projects__head .h2 { margin-top: 1.5rem; }
-  .projects__intro { width: auto; margin: 1.5rem 0 0; }
-  .projects__intro p { margin-bottom: 1.5rem; font-size: 0.875rem; }
+  .projects__head { padding-bottom: 0; }
   .projects .rule { display: none; }
   .track--projects { gap: 0.5rem; margin-top: 2rem; padding-inline: var(--gutter); scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); }
   .slide { height: 25rem; scroll-snap-align: start; }
   .slide--wide, .slide--narrow { width: 22.5rem; }
   .slide::after { height: 7rem; }
-  .slide figcaption { left: 1.625rem; bottom: 1.5rem; font-size: 0.875rem; }
 
   /* Upcoming */
   .upcoming { padding-top: 4rem; }
@@ -632,8 +613,6 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
   .track--upcoming { gap: 0.75rem; margin-top: 1.5rem; padding-inline: var(--gutter); scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); }
   .tile { width: 19.375rem; scroll-snap-align: start; }
   .tile__img { aspect-ratio: 310 / 400; }
-  .tile figcaption { display: grid; gap: 0.5rem; margin-top: 1.125rem; font-size: 0.875rem; }
-  .tile figcaption strong { font-size: 0.75rem; text-align: left; }
   .drag-cursor { display: none; }
 
   /* Contact */
@@ -649,7 +628,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
   .footer { padding: 4rem 0.75rem 1rem; }
   .footer__top { display: grid; grid-template-columns: 12.0625rem 1fr; padding: 0; }
   .footer__cta { grid-column: 1 / -1; width: 18.25rem; margin: 0 0 2.5rem; }
-  .footer__cta h2 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+  .footer__cta h2 { font-size: 1.5rem; }
   .footer__col ul { margin-top: 1.25rem; }
   .footer__links { width: auto; margin: 0; font-weight: 500; }
   .footer__links ul { gap: 0.5rem; }
@@ -661,4 +640,29 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
   .footer__wordmark { margin-top: 1.5rem; }
 
   .reel-dialog video { height: auto; width: 88vw; max-height: 80vh; }
+}
+
+/* ---------- Legal pages (privacy.html, terms.html) ---------- */
+
+.legal-bar { display: flex; justify-content: space-between; align-items: center; padding: 2.5rem var(--gutter); border-bottom: 1px solid var(--rule); }
+.legal-bar img { width: 9.8125rem; height: auto; }
+
+.legal { max-width: 56rem; padding: 6rem var(--gutter) 8rem; }
+.legal h1 { margin: 1.5rem 0 3rem; font-family: var(--font-display); font-size: 3.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.04em; }
+.legal h2 { margin: 3rem 0 1rem; font-family: var(--font-display); font-size: 1.75rem; font-weight: 500; line-height: 1.3; }
+.legal p:not(.eyebrow) { margin-bottom: 1rem; color: #3b3f42; }
+.legal a { text-decoration: underline; text-underline-offset: 0.2em; }
+.legal__updated { margin-top: 3rem; font-size: 1rem; color: var(--grey); }
+
+.legal-foot { padding: 2.5rem var(--gutter); border-top: 1px solid var(--rule); font-size: 1rem; }
+.legal-foot span { margin-inline: 0.375rem; }
+.legal-foot a:hover { text-decoration: underline; }
+
+@media (max-width: 899px) {
+  .legal-bar { padding: 1.25rem var(--gutter); }
+  .legal-bar img { width: 7.8125rem; }
+  .legal { padding: 3rem var(--gutter) 4rem; }
+  .legal h1 { margin-bottom: 2rem; font-size: 2rem; }
+  .legal h2 { margin-top: 2rem; font-size: 1.25rem; }
+  .legal__updated, .legal-foot { font-size: 0.75rem; }
 }
