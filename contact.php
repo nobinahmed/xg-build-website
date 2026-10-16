@@ -13,13 +13,13 @@ function finish(bool $ok, string $message, bool $ajax): void {
     header('Content-Type: application/json');
     echo json_encode(['ok' => $ok, 'message' => $message]);
   } else {
-    header('Location: index.html?sent=' . ($ok ? '1' : '0') . '#contact');
+    header('Location: /?sent=' . ($ok ? '1' : '0') . '#contact');
   }
   exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-  header('Location: index.html#contact');
+  header('Location: /#contact');
   exit;
 }
 
