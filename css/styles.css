@@ -380,6 +380,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
 .track {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior-x: contain;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -585,6 +586,7 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
     padding: 0 var(--gutter);
     border: 0;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-padding-inline: var(--gutter);
     scrollbar-width: none;
