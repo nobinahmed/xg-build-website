@@ -86,6 +86,22 @@
     track.addEventListener('pointercancel', release);
   });
 
+  /* ---------- What we do cards: tap to show photo on touch screens ----------
+     First tap shows the card's photo; a second tap follows its link. */
+  const noHover = window.matchMedia('(hover: none)');
+  const cards = document.querySelectorAll('.services__grid .card');
+
+  cards.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      if (!noHover.matches || card.classList.contains('is-active')) return;
+      e.preventDefault();
+      cards.forEach((c) => c.classList.toggle('is-active', c === card));
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.services__grid .card')) cards.forEach((c) => c.classList.remove('is-active'));
+  });
+
   /* ---------- Reel lightbox ---------- */
   const dialog = document.getElementById('reel-dialog');
   const reel = dialog.querySelector('video');
