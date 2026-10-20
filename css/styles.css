@@ -347,6 +347,14 @@ svg { display: block; width: 1.5rem; height: 1.5rem; flex: none; stroke-width: 1
   .card:hover .card__more, .card:focus-visible .card__more { opacity: 1; transform: none; }
 }
 
+/* Touch screens can't hover, so show the photo all the time. */
+@media (hover: none) {
+  .card { color: var(--paper); }
+  .card__img { opacity: 1; transform: none; }
+  .card::after { opacity: 1; background: linear-gradient(rgba(30, 30, 36, 0.3), rgba(30, 30, 36, 0.3) 35%, rgba(30, 30, 36, 0.8)); }
+  .services__grid .card p { opacity: 0.9; }
+}
+
 /* ---------- Carousels ---------- */
 
 .rule { position: relative; }
